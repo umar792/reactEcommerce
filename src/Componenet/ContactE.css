@@ -1,0 +1,47 @@
+h2 {
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 40px;
+}
+.my-form {
+  width: 500px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.my-form input {
+  margin: 10px 0px;
+  padding: 7px 5px;
+  font-size: 18px;
+}
+.my-form textarea {
+  padding: 7px 5px;
+  font-size: 18px;
+}
+.sub-btn {
+  width: 100px;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #1738c8;
+  border: none;
+  outline: none;
+}
+.sub-btn:hover {
+  color: #1738c8;
+  background-color: white;
+  border: 2px solid #1738c8;
+}
+@media (max-width: 550px) {
+  .my-form {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 300px) {
+  .my-form {
+    width: 100%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,141 @@
+.footer {
+  width: 100%;
+  border: 2px solid #081432;
+  background-color: #081432;
+  position: relative;
+  margin-top: 100px;
+  color: white;
+}
+.started {
+  width: 60%;
+  background-color: #f7f8fb;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+  position: absolute;
+  top: -70px;
+  left: 20%;
+  color: black;
+  border-radius: 10px;
+  /* border: 1px solid gray; */
+  box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.f-btn {
+  padding: 13px 20px;
+  outline: none;
+  background-color: #1b0f86;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #1b0f86;
+}
+.f-btn:hover {
+  border: 2px solid #1b0f86;
+  color: black;
+  background-color: white;
+}
+.footer-content {
+  margin: 100px 0px 20px 0px;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer1,
+.footer2,
+.footer3,
+.footer4 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  margin: 20px 0px;
+}
+.footer-content p {
+  margin-top: 10px;
+}
+
+.footer-content h4 {
+  margin: 10px 0px;
+  font-size: 25px;
+}
+.footer2 .f3-btn {
+  padding: 13px 20px;
+  outline: none;
+  background-color: #1b0f86;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #1b0f86;
+  width: 150px;
+  margin-top: 10px;
+}
+.f3-btn:hover {
+  border: 2px solid #1b0f86;
+  color: black;
+  background-color: white;
+}
+.footer2 input {
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+}
+.footer4-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.f-icon {
+  margin: 0px 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 1132px) {
+  .footer-content {
+    padding: 20px 10px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 880px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .started {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media (max-width: 600px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .started {
+    width: 90%;
+    left: 5%;
+  }
+}
+@media (max-width: 450px) {
+  .started {
+    padding: 30px 10px;
+  }
+  .f-btn {
+    padding: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .started {
+    padding: 30px 10px;
+    flex-direction: column;
+    width: 80%;
+    left: 10%;
+    top: -90px;
+  }
+  .f-btn {
+    padding: 10px 20px;
+    margin-top: 30px;
+  }
+}

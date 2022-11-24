@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.naveber {
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(214, 207, 207);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.naveber .logo {
+  border: 2px solid black;
+  padding: 8px 2px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.naveber .logo font {
+  background-color: #2515b5;
+  padding: 7px 7px;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-right: 3px;
+}
+.naveber .navebar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.naveber .navebar-links {
+  display: flex;
+  margin-top: 15px;
+}
+.naveber .navebar-links a {
+  text-decoration: none;
+  color: black;
+}
+.naveber .navebar-links li {
+  list-style: none;
+  margin: 5px 15px;
+  padding: 5px 7px;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.naveber .navebar-links li:hover {
+  color: #1b2b74;
+}
+.naveber .navebar-links li::before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #1b2b74;
+  transition: all 0.2s linear;
+  transform: translateX(-100%);
+}
+
+.naveber .navebar-links li:hover::before {
+  transform: translateX(0);
+}
+.icon {
+  padding: 0px 7px;
+  position: relative;
+}
+.icon span {
+  position: absolute;
+  padding: 2px;
+  background-color: #1b2b74;
+  color: white;
+  width: 15px;
+  height: 15px;
+  right: 0;
+  top: -5px;
+  border-radius: 50%;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buger {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 1px;
+  display: none;
+  z-index: 100;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+/* ================ responsive   */
+
+@media (max-width: 870px) {
+  .naveber {
+    padding: 0px 10px;
+  }
+  .naveber ul li {
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 880px) {
+  .naveber .navebar-links {
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    transition: all 0.3s linear;
+    z-index: 99;
+  }
+  .naveber .navebar-links li {
+    margin: 10px 0px;
+  }
+  .buger {
+    display: block;
+    z-index: 99;
+  }
+  .mobile-menu {
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    z-index: 99;
+  }
+}
